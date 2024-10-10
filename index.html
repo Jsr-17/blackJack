@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!-- boton de reseteo de juego -->
+    <button id="juegoNuevo" style="display: none;">Jugar de nuevo</button>
+    <!-- Sección del header -->
+    <header>
+        <h1>Bienvenidos al blackjack Jose</h1>
+    </header>
+    <!-- sección del menu de inicio de sesión -->
+    <div class="modal">
+        <div class="menuInicio">
+            <h2>Bienvenidos</h2>
+            <form action="" method="post" id="inicioSesion">
+                <p>Introduzca Nombre Usuario:</p>
+                <input type="text" name="" id="nombreUsuario">
+                <p>Introduzca contraseña:</p>
+                <input type="text" name="" id="contrasenyaUsuario">
+                <input type="submit" value="Iniciar" id="btnIniciarSesion">
+                <span id="nuevaCuenta">Crear Cuenta</span>
+            </form>
+            <p id="invitado">Jugar como Invitado</p>
+        </div>
+
+        <div id="menuCreacion">
+            <h2>Introduzca un nuevo nombre y contraseña</h2>
+            <form action="" method="post" id="creaJugadores">
+                <p>Introduzca Nombre Usuario:</p>
+                <input type="text" name="" id="nombreUsuarioNuevo">
+                <p>Introduzca contraseña:</p>
+                <input type="text" name="" id="contrasenyaUsuarioNuevo">
+                <input type="submit" value="Iniciar" id="btnCrearJugador">
+            </form>
+        </div>
+
+
+        <!-- menú de invitados -->
+        <div class="menuJugadores">
+            <h1>¿Cuantos jugadores van a ser?</h1>
+            <input type="number" min="1" value="1" max="6" id="nJugadores">
+            <button id="iniciarJuego">Iniciar juego</button>
+        </div>
+    </div>
+
+    <!-- Sección del juego -->
+    <section>
+        <div id="cupier">
+            <h1>Cupier Suma Total: <span id="sumCupier"></span> </h1>
+        </div>
+    </section>
+    <section class="mesaJ">
+        <div id="j1" class="jugadores">
+            <h1><span id="nameJug1"></span> Dinero Total: <span id="din1"></span> Suma Total: <span id="sum1"></span>
+            </h1>
+            <div>
+                <button id="pCarta1" class="button">Pedir Carta</button>
+                <button id="pasar1" class="button">Pasar</button>
+            </div>
+        </div>
+
+        <div id="j2" class="jugadores">
+            <h1><span id="nameJug2"></span> Dinero Total: <span id="din2"></span> Suma Total: <span id="sum2"></span>
+            </h1>
+            <div>
+                <button id="pCarta2" class="button">Pedir Carta</button>
+                <button id="pasar2" class="button">Pasar</button>
+            </div>
+        </div>
+
+        <div id="j3" class="jugadores">
+            <h1><span id="nameJug3"></span> Dinero Total: <span id="din3"></span> Suma Total: <span id="sum3"></span>
+            </h1>
+            <div>
+                <button id="pCarta3" class="button">Pedir Carta</button>
+                <button id="pasar3" class="button">Pasar</button>
+            </div>
+        </div>
+
+        <div id="j4" class="jugadores">
+            <h1><span id="nameJug4"></span> Dinero Total: <span id="din4"></span> Suma Total: <span id="sum4"></span>
+            </h1>
+            <div>
+                <button id="pCarta4" class="button">Pedir Carta</button>
+                <button id="pasar4" class="button">Pasar</button>
+            </div>
+        </div>
+
+        <div id="j5" class="jugadores">
+            <h1><span id="nameJug5"></span> Dinero Total: <span id="din5"></span> Suma Total: <span id="sum5"></span>
+            </h1>
+            <div>
+                <button id="pCarta5" class="button">Pedir Carta</button>
+                <button id="pasar5" class="button">Pasar</button>
+            </div>
+        </div>
+
+        <div id="j6" class="jugadores">
+            <h1><span id="nameJug6"></span> Dinero Total: <span id="din6"></span> Suma Total: <span id="sum6"></span>
+            </h1>
+            <div>
+                <button id="pCarta6" class="button">Pedir Carta</button>
+                <button id="pasar6" class="button">Pasar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/app.js"></script>
+
+
+</body>
+
+</html>

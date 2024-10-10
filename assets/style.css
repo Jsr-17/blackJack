@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+img {
+    max-width: 125px;
+    max-height: 135px;
+    margin-right: 2px;
+}
+
+body {
+    background-color: green;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 35px;
+    border: 4px solid black;
+    margin-top: 15px;
+    padding: 25px;
+
+}
+
+section {
+    display: flex;
+    align-content: end;
+    justify-content: center;
+
+}
+
+#cupier {
+    width: 70vw;
+    height: 300px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+#cupier h1 {
+    border-bottom: 2px solid ghostwhite;
+    padding-bottom: 25px;
+}
+
+.mesaJ {
+    height: 450px;
+    justify-content: space-around;
+    align-self: center;
+    border: 5px solid black;
+}
+
+.mesaJ>h1 {
+    height: 50px;
+    margin-top: 13px;
+}
+
+.jugadores {
+    border-left: 2px dotted black;
+    width: 100%;
+}
+.jugadores>h1{
+    margin: 3px;
+}
+
+.jugadores>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: greenyellow;
+    border: 2px  black solid;
+    transition: all 0.3s ease-in-out;
+    margin-left:  1px; ;
+}
+.button:hover{
+    width: 42px;
+    height: 42px;
+
+    background-color: black;
+    border: solid 4px greenyellow;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.menuInicio {
+    height: 75%;
+    width: 50%;
+    border: 3px white solid;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(6, 76, 18);
+    transition: all 1s ease-in-out;
+
+}
+
+
+.menuInicio>h2 {
+    margin: 45px;
+    font-size: 35px;
+    color: rgb(6, 76, 18);
+
+}
+
+.menuInicio>form {
+    margin: 50px;
+    font-size: 21px;
+    padding: 20px;
+
+}
+
+.menuInicio>form>p {
+    margin: 6px;
+}
+
+.menuInicio>form>input[type="text"] {
+    margin: 6px;
+    width: 250px;
+    height: 25px;
+}
+
+.menuInicio>form>input[type="submit"] {
+    width: 45px;
+    height: 20px;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: rgb(119, 119, 119);
+    transition: all 0.4s ease-in-out;
+    border-radius: 25px;
+}
+
+.menuInicio>form>input[type="submit"]:hover {
+    cursor: pointer;
+    width: 50px;
+    height: 26px;
+    border: 2px solid rgb(220, 220, 220);
+    ;
+    color: rgb(119, 119, 119);
+    ;
+    background-color: white;
+}
+
+.menuInicio>form>span {
+    font-size: 13px;
+    color: blue;
+}
+
+.menuInicio>form>span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menuInicio>p {
+    border: 3px solid rgb(6, 76, 18);
+    padding: 25px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.menuInicio>p:hover {
+    border: 2px solid rgb(220, 220, 220);
+    ;
+    background-color: white;
+    cursor: pointer;
+}
+
+.menuJugadores {
+    height: 50vh;
+    width: 50vh;
+    border: 3px white solid;
+    background-color: rgb(220, 220, 220);
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(6, 76, 18);
+    transition: all 1s ease-in-out;
+}
+
+.menuJugadores>input[type="number"] {
+    height: 50px;
+    width: 200px;
+}
+#juegoNuevo {
+    position: absolute;  
+    top: 28%;           
+    left: 25%;           
+    transform: translate(-50%, -50%); 
+    padding: 25px;
+    background-color: white;
+    border: black solid 3px;
+    color: black;
+    transition: all ease-in-out 0.5s;
+}
+#juegoNuevo:hover{
+    background-color: black;
+    border: white solid 3px;
+    color: white;
+    padding: 27px;
+    cursor: pointer;
+
+}
+
+
+
+#menuCreacion {
+    height: 75%;
+    width: 50%;
+    border: 3px white solid;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(6, 76, 18);
+    transition: all 1s ease-in-out;
+    display: none;
+
+}
+
+
+#menuCreacion>h2 {
+    margin: 45px;
+    font-size: 35px;
+    color: rgb(6, 76, 18);
+
+}
+
+#menuCreacion>form {
+    margin: 50px;
+    font-size: 21px;
+    padding: 20px;
+
+}
+
+#menuCreacion>form>p {
+    margin: 6px;
+}
+
+#menuCreacion>form>input[type="text"] {
+    margin: 6px;
+    width: 250px;
+    height: 25px;
+}
+
+#menuCreacion>form>input[type="submit"] {
+    width: 45px;
+    height: 20px;
+    padding: 13px;
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: rgb(119, 119, 119);
+    transition: all 0.4s ease-in-out;
+    border-radius: 25px;
+}
+
+#menuCreacion>form>input[type="submit"]:hover {
+    cursor: pointer;
+    width: 50px;
+    height: 26px;
+    border: 2px solid rgb(220, 220, 220);
+    ;
+    color: rgb(119, 119, 119);
+    ;
+    background-color: white;
+}
+
+#menuCreacion>form>span {
+    font-size: 13px;
+    color: blue;
+}
+
+#menuCreacion>form>span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#menuCreacion>p {
+    border: 3px solid rgb(6, 76, 18);
+    padding: 25px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#menuCreacion>p:hover {
+    border: 2px solid rgb(220, 220, 220);
+    ;
+    background-color: white;
+    cursor: pointer;
+}
